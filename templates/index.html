@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="">
+    <!-- container mx-auto px-4 py-6 -->
+    <div class="glide heropeek w-full top-0" style="height: 90vh; position: absolute!important;">
+        <div class="glide__track" data-glide-el="track" style="height: 100%;">
+            <ul class="glide__slides" style="height: 100%;">
+                <img class="glide__slide" src="/static/images/products/1.png"
+                    style="height: 100%; object-fit: cover;">
+                <img class="glide__slide" src="/static/images/products/2.png"
+                    style="height: 100%; object-fit: cover;">
+                <img class="glide_slide" src="/static/images/products/3.png"
+                    style="height: 100%; object-fit: cover;">
+            </ul>
+        </div>
+        <!-- arrows here -->
+        <div class="glide__arrows" data-glide-el="controls">
+            <button
+                class="absolute top-[50%] left-3 rounded-full cursor-pointer border border[var(--color-dark-green-1)] p-3"
+                data-glide-dir="<">
+                <!-- fill sv -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    color="var(--color-dark-green-1)" fill="none">
+
+                    <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+                </svg>
+            </button>
+            <button
+                class="absolute top-[50%] right-3 rounded-full cursor-pointer border border[var(--color-dark-green-1)] p-3"
+                data-glide-dir=">">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    color="var(--color-dark-green-1)" fill="none">
+                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+
+
+
+        <!--  footer here for some information -->
+        <div
+            class="absolute bottom-0 glide-footer border border-[var(--color-dark-green-1)] bg-gray-200/50 w-full text-[var(--color-dark-green-1)] p-4 ">
+            <div class="grid grid-cols-3">
+                <div class="col-span-1">
+                    <div class="text-5xl flex items-center justify-between mx-3">
+                        Yotoqxona mebeli
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                            color="#000000" fill="none">
+                            <path d="M12 4L12 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M16.9998 8.99996C16.9998 8.99996 13.3174 4.00001 11.9998 4C10.6822 3.99999 6.99982 9 6.99982 9"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                    <p class="text-lg">
+                        Orzuyingizdagi oshxona mebelini tanlang va biz uni siz xohlagandek chiroyli, shinam va
+                        zamonaviy ko’rinishda tayyorlab beramiz
+                    </p>
+
+                </div>
+                <div class="col-span-2 flex items-center justify-end">
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
+                    <!-- Button for ordering -->
+                    <a href="#contact"
+                        class="border border-[var(--color-dark-green-1)] text--[var(--color-dark-green-1)] px-8 py-4 rounded-md text-5xl">
+                        Buyurtma berish
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- category -->
+    <div class="category" style="margin-top: 80vh;">
+        <div class="bg-[var(--color-gray-2)]/50 py-3">
+            <div class="text-3xl text-center">
+                Kategoriyalar
+            </div>
+        </div>
+
+        <div class="p-4 mt-10 bg-[var(--color-gray-2)]/50">
+            <div class="container mx-auto grid grid-cols-3 grid-row-2 gap-4">
+                <!-- Oshxona mebeli -->
+                <div class="col-span-1">
+
+                    <div class=" text-center text-2xl">
+                        Oshxona mebeli
+                    </div>
+                    <div class="relative mt-3">
+                        <img class="rounded-md" src="/static/images/category/1.jpg" alt="">
+                        <!-- view more button here -->
+                        <a href="/category/1" class="absolute bottom-1 right-2">
+                            <div class="flex items-center justify-center bg-white rounded-md text-sm px-4 py-1">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                    color="#000000" fill="none">
+                                    <path
+                                        d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bolalar mebeli -->
+                <div class="col-span-1">
+
+                    <div class=" text-center text-2xl">
+                        Bolalar mebeli
+                    </div>
+                    <div class="relative mt-3">
+                        <img class="rounded-md" src="/static/images/category/2.jpg" alt="">
+                        <!-- view more button here -->
+                        <a href="#" class="absolute bottom-1 right-2">
+                            <div class="flex items-center justify-center bg-white rounded-md text-sm px-4 py-1">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                    color="#000000" fill="none">
+                                    <path
+                                        d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Shkaf va garderob -->
+                <div class="col-span-1">
+
+                    <div class=" text-center text-2xl">
+                        Shkaf va garderob
+                    </div>
+                    <div class="relative mt-3">
+                        <img class="rounded-md" src="/static/images/category/3.jpg" alt="">
+                        <!-- view more button here -->
+                        <a href="#" class="absolute bottom-1 right-2">
+                            <div class="flex items-center justify-center bg-white rounded-md text-sm px-4 py-1">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                    color="#000000" fill="none">
+                                    <path
+                                        d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Yumshoq mebellar -->
+                <div class="col-span-1">
+
+                    <div class=" text-center text-2xl">
+                        Yumshoq mebellar
+                    </div>
+                    <div class="relative mt-3">
+                        <img class="rounded-md" src="/static/images/category/4.jpg" alt="">
+                        <!-- view more button here -->
+                        <a href="#" class="absolute bottom-1 right-2">
+                            <div class="flex items-center justify-center bg-white rounded-md text-sm px-4 py-1">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                    color="#000000" fill="none">
+                                    <path
+                                        d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Yotoqxona mebeli -->
+                <div class="col-span-1">
+
+                    <div class=" text-center text-2xl">
+                        Yotoqxona mebeli
+                    </div>
+                    <div class="relative mt-3">
+                        <img class="rounded-md" src="/static/images/category/5.jpg" alt="">
+                        <!-- view more button here -->
+                        <a href="#" class="absolute bottom-1 right-2">
+                            <div class="flex items-center justify-center bg-white rounded-md text-sm px-4 py-1">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                    color="#000000" fill="none">
+                                    <path
+                                        d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Eshiklar -->
+                <div class="col-span-1">
+
+                    <div class=" text-center text-2xl">
+                        Eshiklar
+                    </div>
+                    <div class="relative mt-3">
+                        <img class="rounded-md" src="/static/images/category/6.png" alt="">
+                        <!-- view more button here -->
+                        <a href="#" class="absolute bottom-1 right-2">
+                            <div class="flex items-center justify-center bg-white rounded-md text-sm px-4 py-1">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                    color="#000000" fill="none">
+                                    <path
+                                        d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order -->
+
+    <div class="order" id="contact">
+        <div class="bg-[var(--color-gray-2)]/50 py-3 mt-10">
+            <div class="text-3xl text-center">
+                Mebelga buyurtma berish
+            </div>
+        </div>
+
+        <div class="p-4 mt-10 bg-[var(--color-gray-2)]/50">
+            <div class="container mx-auto">
+                <div class="bg-[var(--color-dark-green-1)]/20 p-4 rounded-md">
+                    <!-- name -->
+                    <input type="text" name="name" placeholder="Ismingiz"
+                        class="bg-white mb-2 p-4 rounded-md w-full">
+                    <!-- Second name -->
+                    <input type="text" name="second_name" placeholder="Familiyangiz"
+                        class="bg-white mb-2 p-4 rounded-md w-full">
+                    <!-- phone -->
+                    <input type="text" name="phone" placeholder="Telefon raqamingiz"
+                        class="bg-white mb-2 p-4 rounded-md w-full">
+                    <!-- Mebel turini tanlash -->
+                    <select name="furniture_type" id="" class="p-4 rounded-md w-full bg-white mb-2">
+                        <option value="0">Yotoqxona mebeli</option>
+                        <option value="1">Mehmonxona mebeli</option>
+                        <option value="2">Oshxona mebeli</option>
+                        <option value="3">Bolalar uchun mebel</option>
+                    </select>
+                    <!-- Help text -->
+                    <p class="text-sm text-gray-500 mb-2">
+                        Mebel turini tanlang va biz uni siz xohlagandek chiroyli, shinam va zamonaviy ko’rinishda
+                        tayyorlab beramiz
+                    </p>
+
+                    <!-- submit -->
+                    <button
+                        class="bg-[var(--color-dark-green-1)] w-full cursor-pointer text-white text-center p-4 rounded-md">
+                        <span class="text-xl">Yuborish</span>
+                        <br>
+                        Siz bilan tez orada bog'lanamiz
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- about us -->
+
+    <div class="about">
+        <!-- About Us Section -->
+        <div class="bg-[var(--color-gray-2)]/50 py-3 mt-10">
+            <div class="text-3xl text-center">
+                Biz haqimizda qisqacha
+            </div>
+        </div>
+        <section class="p-4 mt-10 bg-[var(--color-gray-2)]/50">
+
+            <div class="container mx-auto text-center">
+                <div class="flex items-center justify-center mb-4"><img src="/static/images/logo.png" alt="Tiwood"
+                        class="w-32"> </div>
+                <p class="text-[var(--color-dark-green-1)] text-xl">
+                    «TIWOOD» kompaniyasi 20**yilda tashkil topgan va sizga zamonaviy mebellarni buyurtma asosida
+                    tayyorlab beradi:
+                    «TIWOOD» kompaniyasi 20**yilda tashkil topgan va sizga zamonaviy mebellarni buyurtma asosida
+                    tayyorlab beradi:
+                    «TIWOOD» kompaniyasi 20**yilda tashkil topgan va sizga zamonaviy mebellarni buyurtma asosida
+                    tayyorlab beradi:
+                    «TIWOOD» kompaniyasi 20**yilda tashkil topgan va sizga zamonaviy mebellarni buyurtma asosida
+                    tayyorlab beradi:
+                </p>
+        </section>
+    </div>
+
+
+</main>
+{% endblock %}
