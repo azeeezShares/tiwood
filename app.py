@@ -16,7 +16,6 @@ db = SQLAlchemy(app)
 class Request(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
-    last_name = db.Column(db.String(100), nullable=True)
     phone = db.Column(db.String(20), nullable=False, unique=True)
     furniture_type = db.Column(db.String(50), nullable=False)
     
@@ -37,8 +36,8 @@ def home():
             "5": "Yotoqxona mebellari",
             "6": "Eshiklar"
         }
-        if request.form.get("name") and request.form.get("second_name") and request.form.get("phone") and request.form.get("furniture_type") and request.form.get("furniture_type") in furniture_options.keys():
-            new_order = Request(name=request.form.get("name"), last_name=request.form.get("second_name"), phone=request.form.get("phone"), furniture_type=furniture_options[request.form.get("furniture_type")])
+        if request.form.get("name") and request.form.get("phone") and request.form.get("furniture_type") and request.form.get("furniture_type") in furniture_options.keys():
+            new_order = Request(name=request.form.get("name"), phone=request.form.get("phone"), furniture_type=furniture_options[request.form.get("furniture_type")])
             db.session.add(new_order)
             db.session.commit()
             return render_template("success.html")
