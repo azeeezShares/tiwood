@@ -9,8 +9,8 @@ var glideHeroPeek = new Glide(".heropeek", {
   perView: 1,
   // set a value to show the previous and next slides peeking in
   peek: {
-    before: 70,
-    after: 70,
+    before: 10,
+    after: 10,
   },
   gap: 20,
 //   gap: 0,
