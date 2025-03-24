@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/logout-jdjd" method="post" class="bg-[var(--color-gray-3)]/50 py-5 px-3 flex justify-end">
+    <button class="bg-red-500 text-white rounded-lg px-3 py-1 cursor-pointer">Chiqish</button>
+</form>
+
+<link rel="stylesheet" href="/static/css/datatables.css">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+<script src="/static/js/datatables.js"></script>
+
+<div class="container mx-auto">
+    
+    <table id="data-table" class="display">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>To'liq ism</th>
+                <th>Telefon raqam</th>
+                <th>Mebel turi</th>
+            </tr>
+        </thead>
+        <tbody>
+                {% for row in context.data %}
+                <tr>
+                    <td>{{row.id}}</td>
+                    <td>{{row.name}} {{row.last_name}}</td>
+                    <td>{{row.phone}}</td>
+                    <td>{{row.furniture_type}}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        $('#data-table').DataTable();
+    });
+</script>
+
+{% endblock content %}
