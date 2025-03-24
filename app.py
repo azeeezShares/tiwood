@@ -35,3 +35,6 @@ def yotoqxona():
 @app.route('/category/6/')
 def eshiklar():
     return render_template('eshiklar.html')
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=5000, debug=True)
